@@ -2,13 +2,49 @@
 <html> 
 
 <head>
+    <!-- links style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- links D3 -->
+    <script src="js/d3.v6.1.1/d3.min.js"></script>
     <meta charset=utf-8/>
+    <title>hw-05</title>
 </head>
 
 
 <body>
+    <h1 class="centered">hw-05: Interactive Graph with D3</h1>
+    <div class="flex">
+        <div class="col1">
+            <div id="scatter"></div>
+            <div id="bar"></div>
+        </div>
+        <div class="col2">
+            <div id="lastPt"></div>
+            <label for="x-coor">Select the x-coordinate for the point you want to add:</label>
+            <input type="number" id="x-coor" min="1" max="9">
+            <br>
+            <label for="y-coor">Select the y-coordinate for the point you want to add:</label>
+            <input type="number" id="y-coor" min="1" max="9">
+            <br>
+            <br>
+            <!-- button to add point -->
+            <button type="button" id="addPoint">Add Point</button>
+        </div>
+    </div>
+
+    <h3 class="centered">Acknowledgements</h3>
+    <div>
+        <ul>
+            <li>https://www.dashingd3js.com/d3-tutorial/adding-an-svg-element-using-d3-js</li>
+            <li>https://stackoverflow.com/questions/22584060/d3js-how-to-toggle-css-class-after-clicking-on-anelement</li>
+            <li>https://stackoverflow.com/questions/23703089/d3-js-change-color-and-size-on-line-graph-dot-on-mouseover</li>
+            <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round</li>
+            <li>https://www.knowledgehut.com/blog/web-development/d3-bar-chart</li>
+        </ul>
+    </div>
 
 
+<script src="main.js"></script>
 </body>
 
 </html>

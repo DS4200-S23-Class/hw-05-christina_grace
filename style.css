@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+  }
+  
+.centered {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.col1 {
+    float: left;
+    width: 60%;
+}
+
+.col2 {
+    float: right;
+    width: 40%;
+}
+
+.border {
+    stroke-width: 3px;
+    stroke: salmon;
+}
+
+.point {
+    fill: pink;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: mistyrose;
+    border:  solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 5px;
+  }
